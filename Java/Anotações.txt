@@ -1,4 +1,4 @@
-﻿# Instalação de ambiente (SO Unix) #
+# Instalação de ambiente (SO Unix)
 
 ## Instalando o Java 10
 
