@@ -1,7 +1,7 @@
 Java = Lançada pela Sun Microsystems e adquirida pela Oracle, é uma linguagem de programação e plataforma computacional. O Java é compilado para um bytecode que é 
 interpretado por uma máquina virtual (JVM).
 
-Compilador = Programa que a partir de um código fonte escrito em linguagem textual o transforma em linguagem de máquina. Alto nível -> Baixo nível.
+Compilador = (javac) Programa que a partir de um código fonte escrito em linguagem textual o transforma em linguagem de máquina. Alto nível -> Baixo nível.
 
 Bytecode = Código originado da compilação do programa Java. O bytecode é o programa interpretado e executado pela JVM.
 
