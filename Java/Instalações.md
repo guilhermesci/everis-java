@@ -11,7 +11,7 @@ export PATH=$JAVA_HOME/bin:$PATH
 
 $ java -version  
 
-+ Local de instalação (/user/lib/jvm)  
+Local de instalação (/user/lib/jvm)  
 
 ## Ferramentas de build
 
