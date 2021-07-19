@@ -1,7 +1,6 @@
-## Alguns comandos para SO Windows e Unix, comandos utilizados no Git e ao final algumas anotações sobre a aula de introdução ao Git sobre seus objetos 
-e o ciclo de vida dos arquivos.  
+### Alguns comandos para SO Windows e Unix, comandos utilizados no Git e ao final algumas anotações sobre a aula de introdução ao Git seus objetos e o ciclo de vida dos arquivos.  
 
-### Windows
+#### Windows
 - cd | cd ..  
 - dir  
 - mkdir  
@@ -9,7 +8,7 @@ e o ciclo de vida dos arquivos.
 - cls  
 - echo hello > hello.txt  
 
-### Unix  
+#### Unix  
 - cd | cd ..  
 - ls  
 - mkdir  
@@ -18,7 +17,7 @@ e o ciclo de vida dos arquivos.
 - echo hello > hello.txt | nano arquivo.txt  
 - mv file ./newfolder/ (se nao me engano também renomeia)  
 
-### Git  
+#### Git  
 - git --version  
 - git config --list  
 - git config --global --unset user.email  
@@ -40,7 +39,7 @@ e o ciclo de vida dos arquivos.
 
 #### Life Cycle 
 working directory -> staging area -> local repository -> remote repository  
-alter -------------> git add ------> git commit -------> git push 			  | pull (remote -> local)  
+alter ---------------> git add -------> git commit ------> git push (local -> remote) | pull (remote -> local)  
 
 #### OBJECTS
 blob -> tree -> commit
