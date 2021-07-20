@@ -26,5 +26,6 @@ e dos padrões Java com compatibilidade com o Java EE.
 ---
 JVM     -> Java Virtual Machine  
 JRE     -> Java Runtime Environment  
+JDK     -> Java Development Kit
 Java SE -> Java Standard Edition  
 Java EE -> Java Enterprise Edition  
