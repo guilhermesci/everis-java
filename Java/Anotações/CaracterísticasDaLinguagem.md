@@ -91,3 +91,36 @@ Isso significa que cada classe de wrapper pode implementar os métodos da classe
 Como os wrappers são tipos de referência, seu valor padrão será nulo. Por outro lado, os tipos primitivos nunca podem ser nulos. 
 Se os tipos primitivos não forem atribuídos a um valor, a linguagem atribuirá a eles um valor padrão. É importante entender esse comportamento 
 quando você escolhe entre usar um tipo primitivo ou um wrapper.  
+
+#### Wrappers são imutáveis  
+> 
+> Todos os objetos wrapper primitivos em Java são finais, o que significa que são imutáveis. Quando um objeto de invólucro tem seu valor modificado,
+> o compilador deve criar um novo objeto e então reatribuir esse objeto ao original.  
+>>     public void addOne (Integer i) {  
+>>         i = i + 1;  
+>>     }  
+>  
+> Essa criação e eventual garbage collection de objetos irá adicionar muita sobrecarga, especialmente ao fazer grandes cálculos em loops.  
+
+### Autoboxing  
+- É a conversão automática de tipos primitivos em suas classes de objetos wrapper correspondentes.  
+
+### Unboxing  
+- É a conversão automática de wrapper em seus tipos primitivos correspondentes.
+
+### Sugestão  
+- Quando usar tipos primitivos  :
+     - Ao fazer uma grande quantidade de cálculos, os tipos primitivos são sempre mais rápidos - eles têm muito menos sobrecarga.  
+     - Quando você não quer que a variável seja nula.  
+     - Quando você não deseja que o valor padrão seja nulo.  
+     - Se o método deve retornar um valor  
+
+- Quando usar a classe Wrapper  
+     - Quando você está usando coleções ou genéricos - é obrigatório  
+     - Se você deseja MIN_SIZE ou MAX_SIZE de um tipo.  
+     - Quando você deseja que a variável possa ser nula.  
+     - Quando você deseja que o valor padrão seja nulo.  
+     - Se às vezes o método pode retornar um valor nulo.  
+
+## Não Primitivos  
+
