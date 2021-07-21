@@ -123,6 +123,18 @@ quando você escolhe entre usar um tipo primitivo ou um wrapper.
 
 ## Não Primitivos  
 
+Todos os outros tipos diferentes dos tipos primitivos são Objetos.
+- String
+- Number
+- Object (Todos os outros objetos extendem Object)
+- Qualquer outro...
+
+## Tipagem forte e estática
+
+- Forte = Após atribuir um tipo para uma variável, não é possível atribuir um valor diferente deste tipo.  
+- Estática = Os tipos são verificados em tempo de compilação  
+- *Tipo Inferido* = Utilizando a palavra reservada ``var`` o tipo da variável é reconhecido de forma implícita. Criado a partir da versão 10.  
+
 Referências:  
 https://web.digitalinnovation.one/course/desenvolvimento-basico-em-java/learning/358a846f-33ec-4d11-8e14-41b25398694d  
 https://medium.com/@bpnorlander/java-understanding-primitive-types-and-wrapper-objects-a6798fb2afe9  
