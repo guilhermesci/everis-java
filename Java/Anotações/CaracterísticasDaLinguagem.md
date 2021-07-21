@@ -73,8 +73,7 @@ storing 15 decimal digits</td>
 
 Tipos primitivos em Java são "estaticamente tipados", o que significa que todas as variáveis devem primeiro ser declaradas antes que possam ser utilizadas, 
 ao contrário de linguagens como Python.  
-> O seguinte código irá causar um erro:
-> - numero = 10;
+Errado ``numero = 10;`` | Correto ``int numero = 10;``
 
 ## Wrappers
 
@@ -103,10 +102,10 @@ quando você escolhe entre usar um tipo primitivo ou um wrapper.
 > Essa criação e eventual garbage collection de objetos irá adicionar muita sobrecarga, especialmente ao fazer grandes cálculos em loops.  
 
 ### Autoboxing  
-- É a conversão automática de tipos primitivos em suas classes de objetos wrapper correspondentes.  
+- É a conversão automática de tipos primitivos em suas classes de objetos wrapper correspondentes. ``Byte b = 127;``  
 
 ### Unboxing  
-- É a conversão automática de wrapper em seus tipos primitivos correspondentes.
+- É a conversão automática de wrapper em seus tipos primitivos correspondentes. ``boolean varTrue = Boolean.TRUE;``  
 
 ### Sugestão  
 - Quando usar tipos primitivos  :
@@ -124,3 +123,6 @@ quando você escolhe entre usar um tipo primitivo ou um wrapper.
 
 ## Não Primitivos  
 
+Referências:  
+https://web.digitalinnovation.one/course/desenvolvimento-basico-em-java/learning/358a846f-33ec-4d11-8e14-41b25398694d  
+https://medium.com/@bpnorlander/java-understanding-primitive-types-and-wrapper-objects-a6798fb2afe9  
