@@ -135,6 +135,45 @@ Todos os outros tipos diferentes dos tipos primitivos são Objetos.
 - Estática = Os tipos são verificados em tempo de compilação  
 - *Tipo Inferido* = Utilizando a palavra reservada ``var`` o tipo da variável é reconhecido de forma implícita. Criado a partir da versão 10.  
 
+# Modificadores de acesso  
+
+## Public  
+Em Java, a visibilidade padrão de classes, atributos e métodos está restrita a todos os membros que fazem parte de um mesmo pacote. A palavra-chave public modifica essa visibilidade de forma a ampliá-la, deixando-a sem restrições.  
+
+Uma classe definida como pública pode ser utilizada por qualquer objeto de qualquer pacote. Em Java, uma unidade de compilação (um arquivo fonte com extensão .java) pode ter no máximo uma classe pública, cujo nome deve ser o mesmo do arquivo (sem a extensão). As demais classes na unidade de compilação, não públicas, são consideradas classes de suporte para a classe pública e têm a visibilidade padrão.  
+
+Um atributo público de uma classe pode ser diretamente acessado e manipulado por objetos de outras classes.  
+
+Um método público de uma classe pode ser aplicado a um objeto dessa classe a partir de qualquer outro objeto de outra classe. O conjunto de métodos públicos de uma classe determina o que pode ser feito com objetos da classe, ou seja, determina o seu comportamento.  
+
+## Private  
+A palavra-chave private restringe a visibilidade do membro modificado, método ou atributo, exclusivamente a objetos da própria classe que contém sua definição.  
+
+## Protected  
+A palavra-chave protected restringe a visibilidade do membro modificado, atributo ou método, de forma que classes não-relacionadas não possam acessá-lo. Objetos da própria classe, de classes derivadas desta e de classes do mesmo pacote têm acesso a membros protected.  
+
+## Default  
+A classe e/ou seus membros são acessíveis somente por classes do mesmo pacote, na sua declaração não é definido nenhum tipo de modificador, sendo este identificado pelo compilador.
+
+## Abstract  
+Esse modificador não é aplicado em variáveis, apenas em classes e métodos. A definição de um método compreende especificação (a sua assinatura) e implementação (o seu corpo). Há situações em que é possível afirmar que uma classe deve ter um método com determinada especificação mas nada pode se afirmar sobre seu comportamento. Para esses casos, é possível definir que a classe tem esse método como abstrato.  
+
+A classe que tenha pelo menos um método abstrato não pode ser instanciada e também deve ser declarada como abstrata. A definição desse método deverá ser completada em uma classe derivada dessa que contém o método abstrato, usando o mecanismo de [redefinição de métodos](https://www.dca.fee.unicamp.br/cursos/PooJava/heranca/redefmet.html).  
+
+## Static  
+Usualmente, métodos definidos em uma classe são aplicados a objetos daquela classe. Há no entanto situações nas quais um método pode fazer uso apenas dos recursos de uma classe (e não das informaões associadas a cada objeto individualmente) para realizar sua tarefa.
+
+Para lidar com tais situações, Java define os métodos da classe, cuja declaração deve conter o modificador static. Um método estático pode ser aplicado à classe e não necessariamente a um objeto. Considere o exemplo do método sqrt(), um método estático da classe Math, usado aqui para atribuir a raiz quadrada de 2 à variável sqr2:
+
+     double sqr2 = Math.sqrt(2.0);
+Exemplos de métodos estáticos em Java incluem os métodos para manipulação de tipos primitivos definidos nas classes Character, Integer e Double, assim como todos os métodos definidos para a classe Math.
+
+Se aplicado este modificador ao atributo, o valor dele estará presente em todas as instâncias do objeto. Caso crie duas subclasses de uma classe com atributo static, quando alterado seu valor, essa alteração será refletida nessas duas subclasses.  
+
+## Final  
+Quando aplicado em classes, não permite que a classe seja estendida. Aplicado em métodos, não permite que o mesmo seja sobrescrito (overriding) na subclasse, e nos valores de variáveis, não permite que seu valor seja alterado após sua atribuição.  
+
 Referências:  
 https://web.digitalinnovation.one/course/desenvolvimento-basico-em-java/learning/358a846f-33ec-4d11-8e14-41b25398694d  
+https://www.dca.fee.unicamp.br/cursos/PooJava/  
 https://medium.com/@bpnorlander/java-understanding-primitive-types-and-wrapper-objects-a6798fb2afe9  
