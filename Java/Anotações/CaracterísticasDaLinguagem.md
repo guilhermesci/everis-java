@@ -173,6 +173,7 @@ Se aplicado este modificador ao atributo, o valor dele estará presente em todas
 ## Final  
 Quando aplicado em classes, não permite que a classe seja estendida. Aplicado em métodos, não permite que o mesmo seja sobrescrito (overriding) na subclasse, e nos valores de variáveis, não permite que seu valor seja alterado após sua atribuição.  
 
+---
 Referências:  
 https://web.digitalinnovation.one/course/desenvolvimento-basico-em-java/learning/358a846f-33ec-4d11-8e14-41b25398694d  
 https://www.dca.fee.unicamp.br/cursos/PooJava/  
