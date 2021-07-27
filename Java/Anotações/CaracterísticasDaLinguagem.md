@@ -137,6 +137,46 @@ Todos os outros tipos diferentes dos tipos primitivos são Objetos.
 
 # Modificadores de acesso  
 
+<div class="responsive-table">
+  <div class="responsive-table"><table>
+    <tbody><tr>
+      <th></th>
+      <th>private</th>
+      <th>default</th>
+      <th>protected</th>
+      <th>public</th>
+    </tr>
+    <tr>
+      <td>A partir da mesma classe</td>
+      <td>sim</td>
+      <td>sim</td>
+      <td>sim</td>
+      <td>sim</td>
+    </tr>
+    <tr>
+      <td>Qualquer classe do mesmo pacote</td>
+      <td>não</td>
+      <td>sim</td>
+      <td>sim</td>
+      <td>sim</td>
+    </tr>
+    <tr>
+      <td>Qualquer classe filha(subclasse) em pacote diferente</td>
+      <td>não</td>
+      <td>não</td>
+      <td>sim</td>
+      <td>sim</td>
+    </tr>
+    <tr>
+      <td>Qualquer classe em pacote diferente</td>
+      <td>não</td>
+      <td>não</td>
+      <td>não</td>
+      <td>sim</td>
+    </tr>
+  </tbody></table></div>
+</div>
+
 ## Public  
 Em Java, a visibilidade padrão de classes, atributos e métodos está restrita a todos os membros que fazem parte de um mesmo pacote. A palavra-chave public modifica essa visibilidade de forma a ampliá-la, deixando-a sem restrições.  
 
