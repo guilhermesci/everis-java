@@ -48,4 +48,13 @@
 >    showViolations = true  
 >    configFile = file("config/checkstyle/checkstyle.xml")  
 >  }  
-- Dentro de "build/reports/checkstyle/" existe o arquivo main.html onde se consegue navegar e visualizar os erros pelo browser por exemplo...
+- Dentro de "build/reports/checkstyle/" existe o arquivo main.html onde se consegue navegar e visualizar os erros pelo browser por exemplo...  
+
+---
+
+# This, Super, Equals e HashCode
+- This: Auto referência  
+- Super: Referência a superclasse (usando "super" em classe que não extende nenhuma classe explícitamente, se faz referência então a classe "Object")  
+- Equals: Método herdado de Object, serve para fazer comparação entre objetos. Quando se comparam dois objetos, se compara a refeência deles, então por mais que tenham as mesmas informações, o Java não é capaz de identificar essa similaridade.  
+- HashCode: Quando se fala em hashCode, precisamos pensar em um código gerado que garanta um caráter único ao nosso objeto. Essa pode ser uma forma interessante para que possa comparar se realmente um objeto é igual ao outro. Para isso precisamos garantir que a implementação da lógica de hashCode sempre respeite as mesmas regras, pois quando compararmos os objetos, o nosso fator de comparação será ele.
+  - obj.hashCode() || Objects.hash(att1, att2, ...)  
