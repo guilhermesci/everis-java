@@ -66,6 +66,8 @@ A sintaxe para a declaração de uma interface é similar àquela para a defini�
 
 Uma interface estabelece uma espécie de contrato que é obedecido por uma classe. Quando uma classe implementa uma interface, garante-se que todas as funcionalidades especificadas pela interface serão oferecidas pela classe.  
 
+**Importante: Métodos default são herdados a todos que implementam uma determinada interface sem quebrar seu contrato.**  
+
 ## Construtores  
 Um construtor é um (pseudo-)método especial, definido para cada classe. O corpo desse método determina as atividades associadas à inicialização de cada objeto criado. Assim, o construtor é apenas invocado no momento da criação do objeto através do operador *new*.  
 
@@ -94,6 +96,9 @@ Com relação ao tipo de retorno, este pode ser um subtipo do tipo de retorno do
 Na programação orientada a objetos, um método aplicado a um objeto é selecionado para execução através da sua assinatura e da verificação a qual classe o objeto pertence. Através do mecanismo de sobrecarga (overloading), dois métodos de uma mesma classe podem ter o mesmo nome, desde que suas listas de parâmetros sejam diferentes, constituindo assim uma assinatura diferente. Tal situação não gera conflito pois o compilador é capaz de detectar qual método deve ser escolhido a partir da análise dos tipos de argumentos do método.  
 
 Um exemplo do uso de sobrecarga em Java é encontrado nos métodos abs(), max() e min() da classe Math, que têm implementações alternativas para quatro tipos de argumentos distintos.  
+
+## Enums
+Basicamente são dicionários de dados imutáveis. Não é permitido criar novas instâncias, seu contrutor é sempre declarado como private e por convenção, por serem objetos constantes e imutáveis (static final), os nomes são em MAIÚSCULOS.
 
 ## Formas de herança
 Há várias formas de relacionamentos em herança:  
