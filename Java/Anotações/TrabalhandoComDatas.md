@@ -53,3 +53,10 @@ descrição: define uma data com base em um instant
 - toInstant()  
 retorno: Instant  
 descrição: retorna um instant com base em um date.  
+
+## Casse Instant
+- Surgiu na JDK 1.8;  
+- Imutável e Thread safe;  
+- Modela um ponto instantâneo de uma linha do tempo;  
+- Indicado para gravar marcações temporais em eventos da sua aplicação.  
+
