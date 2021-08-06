@@ -72,12 +72,15 @@ Algumas possíveis formatações para impressão:
 - System.out.printf("%tr\n", objCalendar);  
 - System.out.printf("%tT\n", objCalendar);  
 
+# Formatação
+
+Utilizar as classes SimpleDateFormat ou DateFormat.
 ---  
 
 https://docs.oracle.com/javase/8/docs/api/java/util/Date.html  
 https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html  
 https://docs.oracle.com/javase/8/docs/api/java/time/Instant.html  
-https://docs.oracle.com/javase/8/docs/api/java/text/DateFormat.html  
 https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html  
+https://docs.oracle.com/javase/8/docs/api/java/text/DateFormat.html  
 https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html  
 https://docs.oracle.com/javase/8/docs/api/java/time/LocalDateTime.html
