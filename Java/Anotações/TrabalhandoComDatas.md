@@ -54,9 +54,30 @@ descrição: define uma data com base em um instant
 retorno: Instant  
 descrição: retorna um instant com base em um date.  
 
-## Casse Instant
+# java.time.Instant  
+
 - Surgiu na JDK 1.8;  
 - Imutável e Thread safe;  
 - Modela um ponto instantâneo de uma linha do tempo;  
 - Indicado para gravar marcações temporais em eventos da sua aplicação.  
 
+# java.util.Calendar  
+
+Calendar é uma classe abstrata que provê métodoas para converter data entre um instante específico. Possui alguns campos específicos para manipulação como MONTH, YEAR, HOUR.  
+
+Algumas possíveis formatações para impressão:  
+- System.out.printf("%tc\n", objCalendar);  
+- System.out.printf("%tF\n", objCalendar);  
+- System.out.printf("%tD\n", objCalendar);  
+- System.out.printf("%tr\n", objCalendar);  
+- System.out.printf("%tT\n", objCalendar);  
+
+---  
+
+https://docs.oracle.com/javase/8/docs/api/java/util/Date.html  
+https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html  
+https://docs.oracle.com/javase/8/docs/api/java/time/Instant.html  
+https://docs.oracle.com/javase/8/docs/api/java/text/DateFormat.html  
+https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html  
+https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html  
+https://docs.oracle.com/javase/8/docs/api/java/time/LocalDateTime.html
