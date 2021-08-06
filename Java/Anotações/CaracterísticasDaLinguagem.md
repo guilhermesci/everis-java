@@ -73,7 +73,13 @@ storing 15 decimal digits</td>
 
 Tipos primitivos em Java são "estaticamente tipados", o que significa que todas as variáveis devem primeiro ser declaradas antes que possam ser utilizadas, 
 ao contrário de linguagens como Python.  
-Errado ``numero = 10;`` | Correto ``int numero = 10;``
+~~~java
+//Errado
+numero = 10;
+
+//Correto
+int numero = 10;
+~~~
 
 ## Wrappers
 
@@ -96,10 +102,10 @@ quando você escolhe entre usar um tipo primitivo ou um wrapper.
 > Todos os objetos wrapper primitivos em Java são finais, o que significa que são imutáveis. Quando um objeto de invólucro tem seu valor modificado,
 > o compilador deve criar um novo objeto e então reatribuir esse objeto ao original.  
 > ~~~java
-> public void addOne (Integer i) {  
->   i = i + 1;  
-> }  
-> ~~~  
+> public void addOne (Integer i) {
+>   i = i + 1;
+> }
+> ~~~
 > Essa criação e eventual garbage collection de objetos irá adicionar muita sobrecarga, especialmente ao fazer grandes cálculos em loops.  
 
 ### Autoboxing  
