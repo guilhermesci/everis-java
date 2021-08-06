@@ -73,8 +73,8 @@ Algumas possíveis formatações para impressão:
 - System.out.printf("%tT\n", objCalendar);  
 
 # Formatação
+Utilizar as classes SimpleDateFormat ou DateFormat.  
 
-Utilizar as classes SimpleDateFormat ou DateFormat.
 ---  
 
 https://docs.oracle.com/javase/8/docs/api/java/util/Date.html  
