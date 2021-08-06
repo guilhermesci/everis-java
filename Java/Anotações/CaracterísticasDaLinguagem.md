@@ -95,10 +95,11 @@ quando você escolhe entre usar um tipo primitivo ou um wrapper.
 > 
 > Todos os objetos wrapper primitivos em Java são finais, o que significa que são imutáveis. Quando um objeto de invólucro tem seu valor modificado,
 > o compilador deve criar um novo objeto e então reatribuir esse objeto ao original.  
->>     public void addOne (Integer i) {  
->>         i = i + 1;  
->>     }  
->  
+> ~~~java
+> public void addOne (Integer i) {  
+>   i = i + 1;  
+> }  
+> ~~~  
 > Essa criação e eventual garbage collection de objetos irá adicionar muita sobrecarga, especialmente ao fazer grandes cálculos em loops.  
 
 ### Autoboxing  
@@ -204,8 +205,9 @@ A classe que tenha pelo menos um método abstrato não pode ser instanciada e ta
 Usualmente, métodos definidos em uma classe são aplicados a objetos daquela classe. Há no entanto situações nas quais um método pode fazer uso apenas dos recursos de uma classe (e não das informaões associadas a cada objeto individualmente) para realizar sua tarefa.
 
 Para lidar com tais situações, Java define os métodos da classe, cuja declaração deve conter o modificador static. Um método estático pode ser aplicado à classe e não necessariamente a um objeto. Considere o exemplo do método sqrt(), um método estático da classe Math, usado aqui para atribuir a raiz quadrada de 2 à variável sqr2:
-
-     double sqr2 = Math.sqrt(2.0);
+~~~java
+double sqr2 = Math.sqrt(2.0);
+~~~  
 Exemplos de métodos estáticos em Java incluem os métodos para manipulação de tipos primitivos definidos nas classes Character, Integer e Double, assim como todos os métodos definidos para a classe Math.
 
 Se aplicado este modificador ao atributo, o valor dele estará presente em todas as instâncias do objeto. Caso crie duas subclasses de uma classe com atributo static, quando alterado seu valor, essa alteração será refletida nessas duas subclasses.  
