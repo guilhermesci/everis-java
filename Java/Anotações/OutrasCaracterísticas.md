@@ -38,16 +38,19 @@
 - Checkstyle Gradle Plugin
 - PMD Gradle Plugin
   - Dentro de um projeto Gradle, deverá alterar o arquivo "build.gradle"
->  plugins {  
->    id 'java'  
->    **id 'checkstyle'**  
->  }
->    
->  checkstyle {  
->    toolVersion = '8.21'  
->    showViolations = true  
->    configFile = file("config/checkstyle/checkstyle.xml")  
->  }  
+
+~~~java
+plugins {
+  id 'java'
+  id 'checkstyle'
+}
+
+checkstyle {
+  toolVersion = '8.21'
+  showViolations = true
+  configFile = file("config/checkstyle/checkstyle.xml")
+}
+~~~
 - Dentro de "build/reports/checkstyle/" existe o arquivo main.html onde se consegue navegar e visualizar os erros pelo browser por exemplo...  
 
 ---
