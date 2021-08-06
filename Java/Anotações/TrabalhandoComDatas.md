@@ -75,6 +75,12 @@ Algumas possíveis formatações para impressão:
 # Formatação
 Utilizar as classes SimpleDateFormat ou DateFormat.  
 
+# Datas no Java 8+
+Pode-se destacar três classes:
+- LocalDate (formato padrão "yyyy-MM-dd")  
+- LocalTime (padrão hora-minuto-segundo | pode ser representado até o nível de nanosegundos)  
+- LocalDateTime (junção das duas anteriores)  
+
 ---  
 
 https://docs.oracle.com/javase/8/docs/api/java/util/Date.html  
@@ -83,4 +89,6 @@ https://docs.oracle.com/javase/8/docs/api/java/time/Instant.html
 https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html  
 https://docs.oracle.com/javase/8/docs/api/java/text/DateFormat.html  
 https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html  
-https://docs.oracle.com/javase/8/docs/api/java/time/LocalDateTime.html
+https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html  
+https://docs.oracle.com/javase/8/docs/api/java/time/LocalTime.html  
+https://docs.oracle.com/javase/8/docs/api/java/time/LocalDateTime.html  
