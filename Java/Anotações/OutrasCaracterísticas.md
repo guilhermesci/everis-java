@@ -61,3 +61,35 @@ checkstyle {
 - Equals: Método herdado de Object, serve para fazer comparação entre objetos. Quando se comparam dois objetos, se compara a refeência deles, então por mais que tenham as mesmas informações, o Java não é capaz de identificar essa similaridade.  
 - HashCode: Quando se fala em hashCode, precisamos pensar em um código gerado que garanta um caráter único ao nosso objeto. Essa pode ser uma forma interessante para que possa comparar se realmente um objeto é igual ao outro. Para isso precisamos garantir que a implementação da lógica de hashCode sempre respeite as mesmas regras, pois quando compararmos os objetos, o nosso fator de comparação será ele.
   - obj.hashCode() || Objects.hash(att1, att2, ...)  
+
+# Generics  
+## Unknow Wildcard  
+~~~java
+public void imprimeLista(List<?> lista){
+  for(Object obj : lista){
+    System.out.println(obj);
+  }
+}
+~~~  
+## Upper Bounded Wildcard  
+~~~java
+public void imprimeLista(List<? extends Pessoa> listaPessoas){
+  for(Pessoa p : listaPessoas){
+    System.out.println(p);
+  }
+}
+~~~
+## Lower Bounded Wildcard  
+~~~java
+public void imprimeLista(List<? super Pessoa> listaPessoas){
+  for(Pessoa p : listaPessoas){
+    System.out.println(p);
+  }
+}
+~~~
+### Convenção dos caracteres wildcard
+- **K** para *Key* -> Map<K,V>
+- **V** para *Value* -> Map<K,V>
+- **E** para *Element* -> List<E>
+- **T** para *Type* -> Collections#addAll
+- **?** para genérico
