@@ -72,6 +72,7 @@ public void imprimeLista(List<?> lista){
 }
 ~~~  
 ## Upper Bounded Wildcard  
+? -> Obrigatório que extenda da classe Pessoa
 ~~~java
 public void imprimeLista(List<? extends Pessoa> listaPessoas){
   for(Pessoa p : listaPessoas){
@@ -80,6 +81,7 @@ public void imprimeLista(List<? extends Pessoa> listaPessoas){
 }
 ~~~
 ## Lower Bounded Wildcard  
+? -> Obrigatório que herde da classe Pessoa
 ~~~java
 public void imprimeLista(List<? super Pessoa> listaPessoas){
   for(Pessoa p : listaPessoas){
