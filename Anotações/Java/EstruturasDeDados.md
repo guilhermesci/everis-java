@@ -3,5 +3,9 @@
 - Pilha (LIFO: Last in First out)
   - Stack
 - Fila (FIFO: First in First out)
-  - item
-- N
+  - Queue / LinkedList
+- Set
+  - HashSet
+- Map
+  - HashMap
+
