@@ -21,8 +21,8 @@
 - git --version  
 - git config --list  
 - git config --global --unset user.email  
-- git config --global user.email "guilherme.s.c.ibanez@gmail.com"  
-- git config --global user.name guilhermesci  
+- git config --global user.email "email@gmail.com"  
+- git config --global user.name username  
 
 - git init  
 - ação/criação/alteração etc...  
