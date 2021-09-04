@@ -9,10 +9,12 @@ As principais anotações utilizadas junto com a annotation **@Entity** são:
 necessária caso o nome da entidade seja diferente do nome da tabela do banco de dados.  
 - **@Column** - É uma annotation opcional. Por padrão o **ATRIBUTO** da entidade é usado para realizar o mapeamento com o nome da **COLUNA** do banco de dados. Essa annotation
 será necessária caso os atributos da entidade sejam diferentes das colunas do banco de dados.  
-- **@Id** - **É OBRIGATÓRIO** especificar ao menos uma **ID** para a entidade
-- Também existem as **annotations de relacionamento** que são utilizadas para representar os relacionamentos entre **TABELAS** do banco de dados (através das chaves estrangeiras 
+- **@Id** - **É OBRIGATÓRIO** especificar ao menos uma **ID** para a entidade  
+
+Também existem as **annotations de relacionamento** que são utilizadas para representar os relacionamentos entre **TABELAS** do banco de dados (através das chaves estrangeiras 
 no banco de dados) em uma aplicação que esteja utilizando o **JPA**. As principais annotations são **@OneToOne**, **@OneToMany**, **@ManyToOne** e **@ManyToMany**.  
-- Na aplicação utilizando **JPA**, é possível realizar relacionamento *unidirecionais* e *bidirecionais*. No *unidirecional* é possível chegar de uma instância A para uma 
+
+Na aplicação utilizando **JPA**, é possível realizar relacionamento *unidirecionais* e *bidirecionais*. No *unidirecional* é possível chegar de uma instância A para uma 
 instância B facilmente, porém o caminho *ao contrário* é **dificultado**. Na *bidirecional*, tanto de A para B como de B para A o acesso é **facilitado**.  
 
 Nas annotations de relacionamento, a propriedade **"fetch"** exige atenção especial do desenvolvedor. Seus possíveis valores são **eager** (ansioso) ou **lazy** (preguiçoso). 
