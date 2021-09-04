@@ -1,7 +1,13 @@
 #### "Roadmap"  
 - Criar o arquivo persistence.xml e realizar as configurações  
 - Utilizar as annotations nas classes que serão mapeadas  
-- Configurar o EntityManager  
+- Configurar o EntityManager (provider=hibernate)  
+
+---
+
+Lembrando que para utilizar o JPA **É NECESSÁRIO** utilizar alguma **implementação**, pois o JPA é apenas a **ESPECIFICAÇÃO**. Algumas das implementações mais conhecidas para o JPA são:  
+- **Hibernate** - É uma ferramenta **ORM** open source e é a líder de mercado, sendo a inspiração para a especificação Java Persistence API(JPA). O Hibernate nasceu sem JPA e tinha sua própria implementação ORM (que ainda é possível usar), porém as versões atuais já possuem compatibilidade com a especificação JPA e são mais aconselháveis de usar do que sua implementação nativa.  
+- **EclipseLink** - É um projeto open source de persistência da Eclipse Foundation. Ele é a implementação de referência do JPA, além de permitir desenvolvedores interagirem com vários serviços de data, incluindo banco de dados, web services, OXM (Object XML mapping), EIS (Enterprise Information Systems). Alguns padrões suportados pelo EclipseLink são: JPA, JAXB, JCA, SOD.
 
 ---
 
