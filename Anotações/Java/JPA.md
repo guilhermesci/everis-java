@@ -1,7 +1,7 @@
 #### "Roadmap"  
-- Criar o arquivo persistence.xml e realizar as configurações  
+- Criar o arquivo persistence.xml e realizar as configurações (provider=hibernate)  
 - Utilizar as annotations nas classes que serão mapeadas  
-- Configurar o EntityManager (provider=hibernate)  
+- Configurar o EntityManager  
 
 ---
 
