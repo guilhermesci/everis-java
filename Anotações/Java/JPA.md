@@ -1,4 +1,5 @@
 #### "Roadmap"  
+- Realizar o donwload manualmente ou através do Gradle ou Maven.
 - Criar o arquivo persistence.xml e realizar as configurações (provider=hibernate)  
 - Utilizar as annotations nas classes que serão mapeadas  
 - Configurar o EntityManager  
