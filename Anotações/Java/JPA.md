@@ -36,5 +36,4 @@ Os principais métodos do **entityManager** para interagir com as entidades são
 
 Para configurar uma **aplicação JAVA** para interagir com o **banco de dados** usando as **especificações do JPA**, será necessário configurar o arquivo **persistence.xml**.  
 
-Nele é possível especificar qual **framework de implementação** será utilizado, quais **classes serão mapeadas como ENTIDADES, URL DE CONEXÃO, USUÁRO, SENHA E DRIVER** (
-normalmente JDBC para BDs relacionais).
+Nele é possível especificar qual **framework de implementação** será utilizado, quais **classes serão mapeadas como ENTIDADES, URL DE CONEXÃO, USUÁRO, SENHA E DRIVER** (normalmente JDBC para BDs relacionais).
