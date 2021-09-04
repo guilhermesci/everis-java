@@ -1,7 +1,7 @@
 #### "Roadmap"  
 - Criar o arquivo persistence.xml e realizar as configurações  
 - Utilizar as annotations nas classes que serão mapeadas  
-- Configurar o entityManager  
+- Configurar o EntityManager  
 
 ---
 
@@ -31,14 +31,14 @@ durante a execução da aplicação.
 - **Lazy** - A entidade mapeada com esse atributo **SOMENTE** será carregada na aplicação quando **esta for EXPLICITAMENTE consultada** pela entidade que está mapeando (É o mais 
 aconselhável de usar caso não se saiba , em um primeiro momento o real número de frequência de consultas).  
 
-Para persistir dados com as entidades mapeadas, é **ÓBRIGATÓRIO** iniciar uma transação. Para manipular transações, é necessário utilizar o seguinte método do **entityManager**:  
+Para persistir dados com as entidades mapeadas, é **ÓBRIGATÓRIO** iniciar uma transação. Para manipular transações, é necessário utilizar o seguinte método do **EntityManager**:  
 - **getTransaction** - Retorna uma **EntityTransaction**, sendo **obrigatório** o seu uso quando **utilizar algum método** que **realize alterações** no banco de dados. Pode 
 utilizar os seguintes métodos:  
   - **begin** - **Inicia** uma transação;  
   - **commit** - Finaliza uma transação, **persistindo** todos os dados que foram modificados desde o início da transação;  
   - **rollback** - Finaliza uma transação, **revertendo** todos os dados que foram modificados desde o início da transação.  
 
-Os principais métodos do **entityManager** para interagir com as entidades são:  
+Os principais métodos do **EntityManager** para interagir com as entidades são:  
 - **find** - **Retorna** a entidade que está persistida no banco de dados através de sua **chave primária**;  
 - **persist** - **Persiste** a entidade no banco de dados (É necessário ter iniciado uma transação);  
 - **remove** - **Remove** a entidade do banco de dados (É necessário ter iniciado uma transação).  
