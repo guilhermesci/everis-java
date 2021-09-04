@@ -1,3 +1,10 @@
+#### "Roadmap"  
+- Criar o arquivo persistence.xml e realizar as configurações  
+- Utilizar as annotations nas classes que serão mapeadas  
+- Configurar o entityManager  
+
+---
+
 Anotação **@Entity** - Indica a aplicação que os objetos da classe especificada serão persistidos no banco de dados. Também podem ser utilizadas outras anotações para auxiliar 
 no mapeamento da classe, tais como **@Id**, **@Column**, **@Table**, **@OneToOne**, **@OneToMany**, **@ManyToOne** e **@ManyToMany**.  
 
