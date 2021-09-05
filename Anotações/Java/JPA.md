@@ -82,4 +82,4 @@ Algumas vantagens ao utilizar o **JPQL** em relação aos métodos básicos de g
 **HQL** - O **H**ibernate **Q**uery **L**anguage é uma **linguagem de consulta orientada a objetos** que realiza operações nas tabelas e colunas da base de dados através do **Hibernate** (através de classes e propriedades da orientação a objetos). Ela inspirou a criação do JPQL e para utilizá-lá, é necessário utilizar as annotations nativas do Hibernate (**Session e SessionFactory**).  
 
 #### EQL  
-**E!L** - I **E**clipseLink **Q**uery **L**anguage provê diversas extensões para a especificação padrão do **JPQL**. Essas extensões provêem acesso a funcionalidades padrões do **SQL**, além de funcionalidades específicas do **EclipseLink**.
+**EQL** - O **E**clipseLink **Q**uery **L**anguage provê diversas extensões para a especificação padrão do **JPQL**. Essas extensões provêem acesso a funcionalidades padrões do **SQL**, além de funcionalidades específicas do **EclipseLink**.
