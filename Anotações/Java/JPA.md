@@ -67,9 +67,9 @@ O **JPQL (Java Persistence Query Language)** é uma linguagem de consulta indepe
 
 Com o **JPQL** é possível utilizar as **propriedades de orientação a objetos** nas consultas realizadas no banco de dados através de **entidades mapeadas**, tal como **herança**.  
 Algumas vantagens ao utilizar o **JPQL** em relação aos métodos básicos de gestão de entidades do **EntityManager** são:  
-1 - **NÃO** é necessário realizar os join **explicitamente** entre entidades que estão com **annotations de relacionamento**, pois os joins são criados **automaticamente** durante uma consulta;  
-2 - **JPQL** utiliza as funcionalidades de carregamento **"lazy / eager"** nos relacionamentos entre entidades, aumentando a eficiência das consultas na aplicação;  
-3 - As consultas podem ser armazenadas em cache para **melhorar a performance da aplicação**;  
-4 - Operações de busca, atualização e remoção de **entidades em MASSA**, ao invés de realizar operações em apenas uma instância por vez através de chaves primárias (como nos métodos do EntityManager);  
-5 - Realizar consultas mais **complexas**;  
-6 - Realizar funções de **agregação**. 
+1) **NÃO** é necessário realizar os join **explicitamente** entre entidades que estão com **annotations de relacionamento**, pois os joins são criados **automaticamente** durante uma consulta;  
+2) **JPQL** utiliza as funcionalidades de carregamento **"lazy / eager"** nos relacionamentos entre entidades, aumentando a eficiência das consultas na aplicação;  
+3) As consultas podem ser armazenadas em cache para **melhorar a performance da aplicação**;  
+4) Operações de busca, atualização e remoção de **entidades em MASSA**, ao invés de realizar operações em apenas uma instância por vez através de chaves primárias (como nos métodos do EntityManager);  
+5) Realizar consultas mais **complexas**;  
+6) Realizar funções de **agregação**. 
