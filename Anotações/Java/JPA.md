@@ -76,6 +76,8 @@ Algumas vantagens ao utilizar o **JPQL** em relação aos métodos básicos de g
 
 ---
 
+# JPQL X JPA Criteria API  
+
 Existe uma alternativa a consultas **JPQL** a partir do **JPA 2.0** chamada **JPA Criteria API**, que é muito útil para construir **consultas dinâmicas**.  
 
 No **JPQL** as consultas só são verificadas no **momento de execução**, não sendo possível detectar erros de sintaxe na consulta durante a compilação. Já o **JPA Criteria API** consegue detectar esses erros no **momento de compilação**.  
