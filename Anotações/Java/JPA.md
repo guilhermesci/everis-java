@@ -76,6 +76,18 @@ Algumas vantagens ao utilizar o **JPQL** em relação aos métodos básicos de g
 
 ---
 
+Existe uma alternativa a consultas **JPQL** a partir do **JPA 2.0** chamada **JPA Criteria API**, que é muito útil para construir **consultas dinâmicas**.  
+
+No **JPQL** as consultas só são verificadas no **momento de execução**, não sendo possível detectar erros de sintaxe na consulta durante a compilação. Já o **JPA Criteria API** consegue detectar esses erros no **momento de compilação**.  
+
+Essa funcionalidade se torna possível porque no JPA Criteria API as consultas são definidas como **instâncias de objetos Java** e representam elementos de consulta. Já as consultas JPQL são definidas apenas como **"string"**.  
+
+No entando o **JPA Criteria API** é mais complicado de se utilizar do que o **JPQL**. Sendo assim, para consultas **estáticas simples**, é preferível utilizar o **JPQL**, enquanto que para consultas **dinâmicas** é preferível o **JPA Criteria API**.  
+
+Em relação a eficiência, ambas são **EQUIVALENTES em poder e eficiência**. Portanto saber quando escolher uma ou outra é um grande desafio para projetos de software.  
+
+---
+
 ### Outras linguagens de consulta  
 
 #### HQL  
