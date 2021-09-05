@@ -76,7 +76,7 @@ Algumas vantagens ao utilizar o **JPQL** em relação aos métodos básicos de g
 
 ---
 
-# JPQL X JPA Criteria API  
+# JPQL x JPA Criteria API  
 
 Existe uma alternativa a consultas **JPQL** a partir do **JPA 2.0** chamada **JPA Criteria API**, que é muito útil para construir **consultas dinâmicas**.  
 
@@ -87,6 +87,22 @@ Essa funcionalidade se torna possível porque no JPA Criteria API as consultas s
 No entando o **JPA Criteria API** é mais complicado de se utilizar do que o **JPQL**. Sendo assim, para consultas **estáticas simples**, é preferível utilizar o **JPQL**, enquanto que para consultas **dinâmicas** é preferível o **JPA Criteria API**.  
 
 Em relação a eficiência, ambas são **EQUIVALENTES em poder e eficiência**. Portanto saber quando escolher uma ou outra é um grande desafio para projetos de software.  
+
+---
+
+# JPA Criteria API  
+
+Para o JPA Criteria API verificar os possíveis erros em tempo de compilação, é necessário utilizar o **JPA Metamodel** para referenciar os **atributos** das entidades.  
+
+O **JPA Metamodel** provê a habilidade de examinar o modelo de persistência de um objeto para **consultar** os detalhes de uma **entidade JPA**. Para **cada entidade, uma classes metamodelo** é criada com o mesmo nome da classe, porém procedido pelo símbolo (*underscore*) e com os **atributos estáticos** que representam os campos de persistência.  
+
+Sem o **JPA Metamodel**, os atributos serão referenciados através de Strings, tendo como principal desvantagem o risco de ocorrer algum erro em tempo de execução para o usuário final.  
+
+Para usar o **JPQL** ou o **JPQ Criteria API** é necessário ter um objeto da classe **EntityManager**, pois é através dos seus métodos **createQuery** (JPQL) e **getCriteriaBuilder** (JPA Criteria API) que se inicia a criação das consultas.  
+
+Para criar os **JPA Metamodel** de cada entidade será necessário adicionar o **JAR "hibernate-jpamodelgen"** através do Gradle, Maven ou manualmente. Esse JAR **automatiza a criação de Metamodels** (também existem outras organizações que oferecem esse tipo de solução).  
+
+É possível criar manualmente os **JPA Metamodels** de cada entidade que irão auxiliar na **validação das consultas** realizadas através do **JPA Criteria API**, porém isso seria trabalhoso demais. Por essa razão é mais fácil utilizar um gerador de Metamodels para automatizar esse processo.  
 
 ---
 
