@@ -72,4 +72,14 @@ Algumas vantagens ao utilizar o **JPQL** em relação aos métodos básicos de g
 3) As consultas podem ser armazenadas em cache para **melhorar a performance da aplicação**;  
 4) Operações de busca, atualização e remoção de **entidades em MASSA**, ao invés de realizar operações em apenas uma instância por vez através de chaves primárias (como nos métodos do EntityManager);  
 5) Realizar consultas mais **complexas**;  
-6) Realizar funções de **agregação**. 
+6) Realizar funções de **agregação**.  
+
+---
+
+### Outras linguagens de consulta  
+
+#### HQL  
+**HQL** - O **H**ibernate **Q**uery **L**anguage é uma **linguagem de consulta orientada a objetos** que realiza operações nas tabelas e colunas da base de dados através do **Hibernate** (através de classes e propriedades da orientação a objetos). Ela inspirou a criação do JPQL e para utilizá-lá, é necessário utilizar as annotations nativas do Hibernate (**Session e SessionFactory**).  
+
+#### EQL  
+**E!L** - I **E**clipseLink **Q**uery **L**anguage provê diversas extensões para a especificação padrão do **JPQL**. Essas extensões provêem acesso a funcionalidades padrões do **SQL**, além de funcionalidades específicas do **EclipseLink**.
