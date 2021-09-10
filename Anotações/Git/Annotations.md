@@ -33,10 +33,14 @@
 - git remote add origin "link remoto"  
 - git remote -v  
 - git push origin main (enviando para "origin" alterações do branch "main")  
-
+---
 - git pull origin main  
 - git clone "link remoto"  
-
+---
+- git stash save "comentario"
+- git checkout move-to-branch  
+- git checkout -b create-branch  
+---
 #### Life Cycle 
 working directory -> staging area -> local repository -> remote repository  
 alter ---------------> git add -------> git commit ------> git push (local -> remote) | pull (remote -> local)  
