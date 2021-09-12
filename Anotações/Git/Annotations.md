@@ -37,7 +37,8 @@
 - git pull origin main  
 - git clone "link remoto"  
 ---
-- git stash save "comentario"
+- git stash save "comentario"  
+  stash list | pop
 - git checkout move-to-branch  
 - git checkout -b create-branch  
 ---
