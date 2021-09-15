@@ -49,5 +49,5 @@ alter ---------------> git add -------> git commit ------> git push (local -> re
 #### OBJECTS
 blob -> tree -> commit  
 
-No link abaixo é possível simular vários casos e entender melhor os conceitos
-https://git-school.github.io/visualizing-git/
+[Clique aqui para simular vários casos e entender melhor os conceitos] (https://git-school.github.io/visualizing-git/)  
+
