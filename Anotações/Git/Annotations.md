@@ -28,7 +28,7 @@
 - ação/criação/alteração etc...  
 - git add . | * | <file>  
 - git status  
-- git log  
+- git log | git log file.md  
 - git commit -m "mensagem do commit"  
 - git remote add origin "link remoto"  
 - git remote -v  
@@ -38,7 +38,7 @@
 - git clone "link remoto"  
 ---
 - git stash save "comentario"  
-  stash list | pop
+  stash list | pop 0
 - git checkout move-to-branch  
 - git checkout -b create-branch  
 ---
