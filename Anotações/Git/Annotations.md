@@ -28,7 +28,7 @@
 - ação/criação/alteração etc...  
 - git add . | * | <file>  
 - git status  
-- git log | git log file.md  
+- git log | git log file.md | gitk  
 - git commit -m "mensagem do commit"  
 - git remote add origin "link remoto"  
 - git remote -v  
