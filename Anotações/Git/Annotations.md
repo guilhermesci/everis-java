@@ -47,4 +47,7 @@ working directory -> staging area -> local repository -> remote repository
 alter ---------------> git add -------> git commit ------> git push (local -> remote) | pull (remote -> local)  
 
 #### OBJECTS
-blob -> tree -> commit
+blob -> tree -> commit  
+
+No link abaixo é possível simular vários casos e entender melhor os conceitos
+https://git-school.github.io/visualizing-git/
